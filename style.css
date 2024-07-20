@@ -1,0 +1,150 @@
+@Keyframes welcome{
+  0%{transform: translateY(-300px)}
+  20%{transform: translateY(0)}
+  40%{transform: translateY(-150px)}
+  60%{transform: translateY(0)}
+  80%{transform: translateY(-70px)}
+  100%{ transform: translateY(0)}
+}
+@Keyframes slideinleft{
+  from{transform: translateX(-200px)}
+  to{transform: translateX(0)}
+}
+@Keyframes slideinright{
+  from{transform: translateX(200px)}
+  to{transform: translateX(0)}
+}
+@Keyframes rotate{
+  from{transform: rotate(0)}
+  to      {transform: rotate(360deg)}
+}
+
+.introduction #text2{
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+}
+.introduction #text3 .text3ele1{
+  animation-name: slideinleft;
+  animation-duration: 1s;
+}
+.introduction #text3 .text3ele2{
+  animation-name: slideinleft;
+  animation-duration: .75s;
+}
+.introduction #text3 .text3ele3{
+  animation-name: slideinleft;
+  animation-duration: .5s;
+}
+.introduction #text3 .text3ele4{
+  animation-name: slideinleft;
+  animation-duration: 0.25s;
+}
+.introduction #text3 .text3ele5{
+  animation-name: slideinright;
+  animation-duration: 0.25s;
+}
+.introduction #text3 .text3ele6{
+  animation-name: slideinright;
+  animation-duration: 0.5s;
+}
+.introduction #text3 .text3ele7{
+  animation-name: slideinright;
+  animation-duration: 0.75s;
+}
+.introduction #text3 .text3ele8{
+  animation-name: slideinright;
+  animation-duration: 1s;
+}
+.introduction{
+  margin:18px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  width: 90%;
+  height: 90vh;
+  border: 2px solid black;
+}
+.introduction .element{
+  padding: 20px;
+  
+}
+.introduction a{
+  display: block;
+  margin-left:90px; 
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  width:50%;
+  border: 2px solid green;
+  color: black;
+  border-radius:10px;
+  
+  
+  transition: transform 0.2s;
+}
+.introduction a:hover{
+  transform: translateY(-15px);
+  background-color: green;
+  color:white;
+  font-weight: bold;
+}
+.introduction a .tran{
+  color:white;
+  font-weight: bold;
+  padding: 10px;
+}
+.introduction #text2{
+  font-size: 20px;
+}
+.introduction #text3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+.introduction #text{
+  font-size: 70px;
+  animation-name: welcome;
+  animation-duration: 1s;
+}
+
+.introduction #ani{
+  font-size:30px;
+}
+.indexbody{
+  margin:0px;
+}
+body{
+  background-color: white;
+  margin:0px;
+  font-family: serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: Black;
+  height: 10vh;
+}
+.navbar .nav{
+  text-align: center;
+  padding: 10px;
+  border-radius:5px;
+  color: white;
+  width:40%;
+  margin: 0px;
+  align-content: center;
+}
+.navbar .nav:hover{
+  color: black;
+  background-color: white;
+}
+.worded{
+  animation-name: rotate;
+  animation-duration: 5s;
+  margin:20px;
+  text-align: center;
+  margin-top:50px;
+}
+
